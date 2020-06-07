@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ask the Eight Ball</title>
+  </head>
+  <body>
+    <h1>Ask the Eight Ball</h1>
+    <form>
+<label for="userName">What is your name?</label><br />
+<input type="text" id="userName" name="userName" placeholder="Enter your name" oninput="getValueName()"></input><br /><br />
+<label for="userQuestion">What is your question?</label><br />
+<input type="text" id="userQuestion" name="userQuestion" placeholder="Enter your question" oninput="getQuestion()"></input>
+<br /><br />
+<button type="submit" onclick="showResult()">Submit</button> <button type="submit" onclick="refreshPage()">Try Again</button>
+<br /><br />
+<p id="yourResult"></p>
+</form>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
